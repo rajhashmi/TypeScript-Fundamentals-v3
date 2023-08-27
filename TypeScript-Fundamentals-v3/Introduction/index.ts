@@ -1,3 +1,5 @@
+// ts is development tool
+
 
 let age = 19;
 // age type in number you can change its value like 23, 45,67 but you cant change the type like string 
