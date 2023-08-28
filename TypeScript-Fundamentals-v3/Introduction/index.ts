@@ -35,3 +35,34 @@ function sum(num1:number,num2:number):number{
 const sum_2 = sum(2,2);
 console.log(sum_2);
 
+
+
+// You’ll see that there are two syntaxes for building types: Interfaces and Types. You should prefer interface. Use type when you need specific features.
+
+// Composing Types
+
+// Composing types in TypeScript means creating new types by combining existing ones in various ways. 
+
+// Intersection Types (&): Intersection types combine multiple types into a single type. The resulting type will have all the properties and methods of each individual type.
+
+type Person = {
+    firstName: string
+}
+type Age = {
+    age: number
+}
+
+type DetailedInfo = Person & Age;
+
+const DetailedInformation: DetailedInfo ={
+    firstName: "shahid hashmi",
+    age: 19
+}
+
+// Union Types (|): Union types allow a value to be of more than one type. This is useful when a variable can hold different types of values.
+
+type Result = string | number;
+
+const value1: Result = "Hello";
+const value2: Result = 42;
+
