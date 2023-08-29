@@ -285,4 +285,22 @@ x = "howdy";
 // Try
     // Just like other type assertions, this doesn’t change the runtime behavior of your code, so it’s important to only use ! when you know that the value can’t be null or undefined.
 
+
+
+// ====================================== Enums
+// Enums are a feature in TypeScript that lets you define a special kind of value. This value can only be one of a specific set of choices that you give it. Imagine you're trying to represent different categories of things, like colors, days of the week, or states of a process. Enums help you do this in a clear and organized way.
+
+// For example, let's take colors. You might want to work with colors like "Red," "Green," and "Blue." Instead of using regular strings like "Red" and hoping you never make a typo, you can use an enum. Here's how it works:
+
+
+enum Color {
+    Red,
+    Green,
+    Blue
+  }
+  
+  const selectedColor = Color.Green;
+  
+
+
 export{}
