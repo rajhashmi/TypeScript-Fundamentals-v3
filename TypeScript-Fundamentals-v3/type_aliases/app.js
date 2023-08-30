@@ -10,3 +10,5 @@ var myUser = {
 };
 myUser.age = 15;
 // myUser._id = "12" :-> can not change value becuz it's a readonly property
+
+

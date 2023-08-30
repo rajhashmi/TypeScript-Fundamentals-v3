@@ -63,5 +63,35 @@ function getValue(myVal:number){
     return "200 K"
 }
 
+// ========================== Union Type
+type User ={
+    name:string;
+    id:number
+}
+type Admin = {
+    UserName:string;
+    id:number
+}
+
+let Shahid: User | Admin = {name:"shahid",id:12}
+
+Shahid = {UserName:"hashmi",id:12}
+
+// ========================================Tuples 
+
+// we can declear string or number Not both
+
+let array: string[] | number[];
+array = [1,2,3,4]
+array = ["1","2","3","4"]
+
+
+// here this mixed one
+let array2: (string | number)[];
+array2 = [1,2,3,"3"]
+
+// Now its make some squences 
+let array3: [number,string,boolean];
+array3 = [1,"1",true]
 
 export {}
